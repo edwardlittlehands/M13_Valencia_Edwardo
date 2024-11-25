@@ -13,8 +13,8 @@ header {
 	padding:1rem;
 }
 nav {
- background: rgb(255,218,254);
-background: linear-gradient(90deg, rgba(255,218,254,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
+ background: rgb(255,185,174);
+background: linear-gradient(90deg, rgba(255,185,174,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
 	margin-bottom:0;
 	padding: 0.5rem 0;
 
@@ -117,6 +117,7 @@ h2 {
 	}
 	
 p {
+	font-size:1rem;
 	margin-bottom:40px;
 }
 
@@ -224,14 +225,33 @@ figcaption {
 }
 
 footer {
- background: rgb(255,218,254);
-background: linear-gradient(90deg, rgba(255,218,254,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
+	display:flex;
+	justify-content:space-between;
+ background: rgb(255,185,174);
+background: linear-gradient(90deg, rgba(255,185,174,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
 	color:white;
-	text-align:center;
-	padding:20px;
+	align-items:center;
+	padding: 10px 20px;
 	font-family: 'Lato', sans-serif;
+	font-size: 0.9rem;
+	
 }
 
+.footercontainer {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	max-width:1200px;
+	margin: 0 auto;
+	
+}
+
+.footeritem {
+	flex:1;
+	text-align:center;
+	padding: 0 10px;
+	white-space: wrap;
+}
 
 
 
@@ -316,6 +336,21 @@ p {
 	
 }
 
+.footercontainer {
+flex-direction: row;
+gap:10px
+	
+}
+
+.footeritem {
+	
+	text-align:center;
+
+}
+
+
+
+	
 	
 	
 	
@@ -334,7 +369,9 @@ nav ul li a {
 padding: 0,3rem 0.5rem;
 }	
 		
-		
+p{
+font-size:1.2rem;
+}	
 		
 #imgflorist img {
 	max-width:100%;
