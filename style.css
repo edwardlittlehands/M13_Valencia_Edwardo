@@ -186,7 +186,76 @@ figcaption {
 #imgflorist img{
 	width:100%;
 	max-width:446px;
+	height:auto;
 	padding:8px;
 	border: 4px solid pink;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 768px) {
+	#contact {
+		flex-direction: column;
+		align-items:center;
+
+	}
+	#imgflorist {
+		order: -1;
+		width:100%
+	}
+	#imgflorist img {
+max-width:100%;
+height:auto;
+	}		
+	
+	#contactform {
+		width:100%;
+		margin-top:20px;
+	}
+	
+	.flex figure img{
+	width:200px;
+	height:auto;
+	max-width:400px;
+}
+
+.flex {
+	display:flex;
+	justify-content:center;
+	gap: 2%;
+	flex-wrap:wrap;
+}
+
+.borderfigure {
+	border:5px solid transparent;
+	border-radius: 10px
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+	width:250px;
+	background-color:white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	margin:10px;
+	}
+	
+p {
+	margin-bottom:40px;
+}
+
+
+.flex figure {
+	text-align: center;
+	margin: 0 1%;
+}
+
+	
+	
+	
+	@media (max-width: 480px) {
+		#imgflorist img {
+			max-width:100%;
+			height:auto;
+		}
+		
+		#contactform {
+			margin-top:20px;
+		}
