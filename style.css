@@ -9,11 +9,12 @@ padding: 0;
 
 header {
 	text-align: center;
-	bkackground-color:#800000;
+	background-color:white;
 	padding:1rem;
 }
 nav {
-	background-color:#ac768e;
+ background: rgb(255,218,254);
+background: linear-gradient(90deg, rgba(255,218,254,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
 	margin-bottom:0;
 	padding: 0.5rem 0;
 
@@ -223,7 +224,8 @@ figcaption {
 }
 
 footer {
-	background-color: #800000;
+ background: rgb(255,218,254);
+background: linear-gradient(90deg, rgba(255,218,254,1) 0%, rgba(250,141,178,1) 41%, rgba(155,89,255,1) 100%); 
 	color:white;
 	text-align:center;
 	padding:20px;
@@ -234,24 +236,42 @@ footer {
 
 
 @media (max-width: 768px) {
-	#contact {
+	
+	nav ul li {
+	
+	display:inline;
+	font-size:1rem;
+	font-family: 'Lato', sans-serif;
+	color:white;
+	padding: 3%;
+
+}
+
+nav ul li a {
+	color:white;
+	text-decoration:none;
+	padding: 0.5rem 1rem;
+}
+	
+	
+#contact {
 		flex-direction: column;
 		align-items:center;
 
-	}
-	#imgflorist {
+}
+#imgflorist {
 		order: -1;
 		width:100%
-	}
-	#imgflorist img {
-max-width:100%;
+}
+#imgflorist img {
+	max-width:100%;
 height:auto;
-	}		
+}		
 	
-	#contactform {
-		width:100%;
-		margin-top:20px;
-	}
+#contactform {
+	width:100%;
+	margin-top:20px;
+}
 	
 .flex figure img{
 	width:200px;
@@ -300,14 +320,30 @@ p {
 	
 	
 	@media (max-width: 480px) {
-		#imgflorist img {
-			max-width:100%;
-			height:auto;
-		}
 		
-		#contactform {
-			margin-top:20px;
-		}
+nav ul {
+justify-content: center;
+gap: 5px;
+}
+
+nav ul li {
+font-size: 0.9rem;
+}
+
+nav ul li a {
+padding: 0,3rem 0.5rem;
+}	
+		
+		
+		
+#imgflorist img {
+	max-width:100%;
+	height:auto;
+}
+		
+#contactform {
+	margin-top:20px;
+}
 .flex {
 	display:flex;
 	justify-content:center;
